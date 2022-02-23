@@ -1,0 +1,161 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'T';
+    src: url(../fonts/trebuc.ttf);
+}
+
+
+/* body {
+    background-image:url(../images/bg.jpg);
+    background-repeat: repeat;
+} */
+
+.heading {
+    font-family: "Segoe UI";
+    font-size: 36px;
+    color: rgb(1, 12, 12);
+    text-shadow: 0px 0px 2px #000000;
+}
+
+
+/* .heading {
+    font-family: "Segoe UI";
+    font-size: 36px;
+    color: #0FF;
+    text-shadow: 0px 0px 2px #000000;
+} */
+
+.table {
+    border: 1px solid #66F;
+    border-radius: 7px;
+    background-color: transparent;
+    box-shadow: 0px 0px 8px #6699FF;
+    padding: 5px 5px;
+}
+
+.tableHead {
+    font-family: "Segoe UI";
+    color: rgb(1, 14, 20);
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+.labels {
+    font-family: "Segoe UI";
+    color: rgb(5, 0, 0);
+    font-size: 15px;
+    text-shadow: 0px 0px 2px #000000;
+    font-style: italic;
+}
+
+.fields,
+input[type=submit] {
+    font-family: "Segoe UI";
+    color: rgb(14, 1, 1);
+    font-size: 14px;
+    border: 1px solid rgb(1, 1, 22);
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.fields:hover,
+.fields:focus,
+input[type=submit]:hover {
+    font-family: "Segoe UI";
+    color: #2F0809;
+    font-size: 14px;
+    border: 1px solid #FFF;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 1.00);
+    padding: 10px 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 1.00);
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.fields2 {
+    font-family: "Segoe UI";
+    color: #FFF;
+    font-size: 14px;
+    border: 1px solid #66F;
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.commandButton {
+    border: 2px solid #66F;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    color: rgb(17, 1, 1);
+    background-color: transparent;
+}
+
+a:link {
+    font-family: "Segoe UI";
+    color: rgb(27, 1, 1);
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px #333333;
+}
+
+a:active {
+    font-family: "Segoe UI";
+    color: rgb(22, 2, 2);
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px #333333;
+}
+
+a:visited {
+    font-family: "Segoe UI";
+    color: rgb(29, 3, 3);
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px #333333;
+}
+
+a:hover {
+    font-family: "Segoe UI";
+    color: rgb(3, 20, 20);
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 2px 2px 3px #333333;
+}
+
+.text {
+    font-family: "Segoe UI";
+    color: rgb(2, 37, 54);
+    font-size: 16px;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+.info {
+    font-family: "Segoe UI";
+    color: rgb(10, 2, 1);
+    font-size: 14px;
+    text-shadow: 0px 0px 2px #000000;
+}
+
+.nick {
+    font-family: "T";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.msg {
+    font-family: "Segoe UI";
+    font-size: 16px;
+    color: rgb(24, 3, 3);
+}
+
+td {
+    vertical-align: top;
+}
