@@ -16,6 +16,7 @@ $(function() {
                 value: 'new'
             }
         ];
+
         setTimeout(function() {
             generate_message(msg, 'user');
         }, 1000)
@@ -86,13 +87,20 @@ $(function() {
     })
 
     $("#chat-circle").click(function() {
-        $("#chat-circle").toggle('scale');
+
+        // $("#chat-circle").toggle('scale');
         $(".chat-box").toggle('scale');
+
+        // document.getElementById("chat-circle").style.display = 'inline-block';
+
     })
 
     $(".chat-box-toggle").click(function() {
-        $("#chat-circle").toggle('scale');
+        // $("#chat-circle").toggle('scale');
         $(".chat-box").toggle('scale');
+        // document.getElementById("chat-circle").style.display = 'block';
+
+
     })
 
 })

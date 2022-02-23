@@ -62,7 +62,7 @@ setInterval(ajaxCall, (1 * 1000)); // x * 1000 to get it in seconds
 		    <i class="material-icons">▶Snap</i>
 	</div>
   
-  <div class="chat-box">
+  <div class="chat-box" id="sam">
         <span class="heading"></span><span style="float:right">
             <a href="logout.php"><img src="images/logout.png" height="50" width="100"  /></a>
         </span>
@@ -72,7 +72,7 @@ setInterval(ajaxCall, (1 * 1000)); // x * 1000 to get it in seconds
         </div>
 
         
-        <form method="post" action="" id="myForm"><form method="post" action="" id="myForm">
+        <!-- <form method="post" action="" id="myForm"><form method="post" action="" id="myForm"> -->
             <div class="chat-box-body" id="vegan">
             <div class="chat-box-overlay">   
             </div>
@@ -80,7 +80,7 @@ setInterval(ajaxCall, (1 * 1000)); // x * 1000 to get it in seconds
             
             </div><!--chat-log -->
             </div>
-
+        <form method="post" action="" id="myForm"><form method="post" action="" id="myForm">
             <div class="chat-input">      
             
                 <!-- <input type="text" id="chat-input" placeholder="Send a message..."/> -->
@@ -95,6 +95,14 @@ setInterval(ajaxCall, (1 * 1000)); // x * 1000 to get it in seconds
   
 </div>
 <!-- end  -->
+    <script>
+        window.onload=function() {
+            document.getElementById("sam").style.display = 'block';
+        };
+    </script>
+ 
+
+
 </body>
 
 </html>
