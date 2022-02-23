@@ -25,8 +25,15 @@ if(!empty($_POST))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Chat Room</title>
-<link href="scripts/styleSheet.css" rel="stylesheet" type="text/css" />
+<!-- <link href="scripts/styleSheet.css" rel="stylesheet" type="text/css" /> -->
+
+<link href="scripts/chat.css" rel="stylesheet" type="text/css" />
+<!-- <link href="scripts/bootstrap-material-design.css" rel="stylesheet" type="text/css" /> -->
+
 <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="scripts/chat.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
 <script>
 function ajaxCall() {
     $.ajax({
@@ -45,23 +52,49 @@ setInterval(ajaxCall, (1 * 1000)); // x * 1000 to get it in seconds
 </script>
 </head>
 <body>
-<span class="heading">Chat Room</span><span style="float:right"><a href="logout.php">
-<img src="images/logout.png" height="50" width="100"  /></a></span>
 
-<br />
-<div align="center">
-<form method="post" action="" id="myForm">
-<table class="table" cellpadding="4" cellspacing="4">
-<tr><td align="center" class="tableHead" colspan="2">CHAT BOX</td></tr>
-<tr><td colspan="2"><div class="fields2" style="overflow:scroll;height:300px;word-wrap:normal;width:500px;" id="vegan">
-</div></td></tr>
-<tr><td><input name="msg" id="msg" class="fields" type="text" placeholder="Enter Your Message" required="required" style="height:50px;" size="60" /></td>
-<td><input type="submit" value="SEND" class="commandButton" style="height:54px;" /></td></tr>
-</table>
-</form><br />
-<br />
-<!-- <a href="logout.php">BACK</a> -->
+<!-- start  -->
+
+  
+<div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+		    <!-- <i class="material-icons">speaker_phone</i> -->
+		    <i class="material-icons">▶Snap</i>
+	</div>
+  
+  <div class="chat-box">
+        <span class="heading"></span><span style="float:right">
+            <a href="logout.php"><img src="images/logout.png" height="50" width="100"  /></a>
+        </span>
+
+        <div class="chat-box-header">
+        <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+        </div>
+
+        
+        <form method="post" action="" id="myForm"><form method="post" action="" id="myForm">
+            <div class="chat-box-body" id="vegan">
+            <div class="chat-box-overlay">   
+            </div>
+            <div class="chat-logs">
+            
+            </div><!--chat-log -->
+            </div>
+
+            <div class="chat-input">      
+            
+                <!-- <input type="text" id="chat-input" placeholder="Send a message..."/> -->
+                <input name="msg" id="msg" class="fields" type="text" placeholder="Enter Your Message" required="required" style="height:50px;" size="60" />
+                <input type="submit" value="▶" class="commandButton chat-submit" style="height:54px;" />
+        </form>      
+    </div>
+  </div>
+  
+  
+  
+  
 </div>
+<!-- end  -->
 </body>
 
 </html>
